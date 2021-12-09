@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #0B2434;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Die */
+.die-face{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+  color: black;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+.die-num{
+  font-size: 2rem;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 20%);
+}
+
+/* Main Container */
+.container{
+  background-color: #F5F5F5;
+  max-width: 600px;
+  color: black;
+  border-radius: 5px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 40px;
+  margin: 0;
+}
+
+.sub-title{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.dice-container{
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+  margin: 15px;
+}
+
+.roll-btn{
+  height: 50px;
+  width: 150px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin: 35px;
+  cursor: pointer;
+}
+
+.roll-btn:focus{
+  overflow: none;
+}
+
+.roll-btn:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.win-status{
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+}
